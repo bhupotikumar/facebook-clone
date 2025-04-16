@@ -1,50 +1,96 @@
-*{
-    margin: 0 auto;
-    padding: 0 auto;
-    border: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
-body{
-    background: #c49696;
+body {
+    background: #a077a8;
+    overflow: hidden;
 }
 
-.navbar{
+.navbar {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 90wh;
-    height: 5vh;
-    background: #fffdfd;
+    grid-template-columns: 1fr 4fr 1fr;
+    width: 100vw;
+    height: 6vh;
+    background: #130000;
     align-items: center;
+    padding: 0 1rem;
 }
-.nav-left{
+.nav-left {
     display: flex;
-    width: 100%;
-    height: 100%;
     align-items: center;
-    justify-content: center;
-    background: #fc0000;
+    justify-content: flex-start;
+    gap: 1vh;
 }
-.nav-main{
-    width: 100%;
-    height: 100%;
+.branding {
+    width: 5vw;
+    height: 5vh;
     align-items: center;
-    justify-content: center;
-    background: #aef704;
+    border: 2px solid #7c7c7c ;
+    border-radius: 100%;
 }
-.nav-right{
+.search {
+    width: auto;
+    height: 5vh;
+    align-items: center;
+    border: 2px solid #7c7c7c ;
+    border-radius: 30px;
+    
+}
+.branding img {
     width: 100%;
     height: 100%;
-    align-items: center;
-    justify-content: center;
-    background: #4c00fc;
+    object-fit: cover;
+}
+.search img {
+    width: 15%;
+    height: 100%;
+    object-fit: cover;
+    margin: .3vw;
 }
 
-.main{
-    width: 90wh;
+.nav-main {
+    margin: 0 13vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-main>.icon {
+    width: 1.5vw;
+    height: 100%;
+    /* padding: .5vw; */
+    border: none;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: .5vw;
+}
+.icon {
+    width: 1vw;
+    height: 2vh;
+    padding: .5vw;
+    border: 2px solid #bbbbbb;
+    border-radius: 100%;
+}
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
+}
+
+
+
+.main {
+    width: 90vw;
     height: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-.home{
+.home {
     grid-column: span 2;
     width: 100%;
     background: #fdfdfd;
